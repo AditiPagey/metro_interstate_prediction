@@ -22,7 +22,7 @@ def traffic_volume():  #for UI
         #print(type(response))
 
         return "Estimated Traffic is: "+ str(response[0])
-    return render_template('index.html')
+    return render_template('templates/index.html')
     # response.headers.add('Access-Control-Allow-Origin', '*')
     #print(type(response))
     #return jsonify(response)
