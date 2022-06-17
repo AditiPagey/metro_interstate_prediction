@@ -1,2 +1,2 @@
-web: gunicorn server:app  -b localhost:3000
+web: gunicorn server:app -b localhost:3000
  
