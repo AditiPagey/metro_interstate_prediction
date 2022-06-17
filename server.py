@@ -4,7 +4,7 @@ import util
 
 app=Flask(__name__)
 app.debug = True
-
+var port=process.env.PORT || 5000
 @app.route('/',methods=['GET','POST'])
 def traffic_volume():  #for UI
     #print("in")
@@ -35,4 +35,4 @@ def home():
 if __name__=="__main__":
     print("Starting Server for model")
     util.load_artifacts() #loading model imp
-    app.run(port=5000)
+    app.run(port)
